@@ -122,4 +122,4 @@ Models are **prevented** from running unsafe operations.
 
 - **[API Reference - Authentication](../api-reference/authentication.md)**
 - **[Deployment Strategies](../deployment/local.md)**
-- **[Threat Mitigation](./threat-mitigation.md)**
+- **[Threat Mitigation](../security/threat-mitigation.md)**

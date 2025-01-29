@@ -25,7 +25,7 @@ All API requests must be **prefixed with `/v1/`** for versioning consistency.
 
 ## **Authentication**
 
-Spawn’s API requires authentication via API keys or JWT tokens. See the [Authentication Guide](./authentication.md) for details on securing your requests.
+Spawn’s API requires authentication via API keys or JWT tokens. See the [Authentication Guide](../api-reference/authentication.md) for details on securing your requests.
 
 ### **Example Authorization Header**
 
