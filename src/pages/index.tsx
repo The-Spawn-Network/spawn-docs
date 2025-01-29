@@ -1,34 +1,12 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
+import React, { useEffect } from 'react';
+import { useHistory } from '@docusaurus/router';
 
-import styles from './index.module.css';
+export default function Home() {
+  const history = useHistory();
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        
-      </div>
-    </header>
-  );
-}
+  useEffect(() => {
+    history.replace('/docs/intro');
+  }, []);
 
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Spawn agents at the speed of light<head />">
-      <HomepageHeader />
-      
-    </Layout>
-  );
+  return null;
 }
