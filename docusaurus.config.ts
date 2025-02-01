@@ -80,7 +80,7 @@ const config: Config = {
           items: [
             {
               label: 'X (Twitter)',
-              href: 'https://x.com/thespawnnetwork',
+              href: 'https://x.com/aispawnnetwork',
             },
           ],
         },
